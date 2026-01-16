@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Términos del Servicio | Manga2Video</title>
+  <meta name="description" content="Términos del servicio para una plataforma que crea videos basados en mangas." />
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#111829;
+      --text:#e7eaf1;
+      --muted:#b7bfd6;
+      --line:#24304a;
+      --accent:#6aa9ff;
+      --warn:#ffcc66;
+      --ok:#67e8a4;
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(106,169,255,.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(103,232,164,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      padding:48px 18px 24px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: rgba(17,24,41,.35);
+      backdrop-filter: blur(10px);
+    }
+    .wrap{max-width:1100px; margin:0 auto}
+    .brand{
+      display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+    }
+    .logo{
+      display:flex; align-items:center; gap:12px;
+    }
+    .mark{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(106,169,255,1), rgba(103,232,164,1));
+      box-shadow: var(--shadow);
+    }
+    h1{font-size: clamp(26px, 3vw, 38px); margin:14px 0 8px}
+    .subtitle{color:var(--muted); max-width:70ch; margin:0}
+    .meta{
+      margin-top:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(17,24,41,.55);
+    }
+    main{padding:26px 18px 60px}
+    .grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns: 1fr}
+    }
+    nav, section{
+      background: rgba(17,24,41,.70);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      box-shadow: var(--shadow);
+    }
+    nav{padding:16px; position:sticky; top:16px}
+    @media (max-width: 980px){ nav{position:relative; top:auto} }
+    nav h2{
+      font-size:16px; margin:0 0 10px; color:var(--text);
+      letter-spacing:.2px;
+    }
+    .toc{list-style:none; padding:0; margin:0}
+    .toc li{margin:8px 0}
+    .toc a{
+      display:block;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(11,15,25,.35);
+      color: var(--muted);
+    }
+    .toc a:hover{color:var(--text); border-color: rgba(106,169,255,.35)}
+    section{padding:22px}
+    section h2{
+      margin:0 0 12px;
+      font-size:20px;
+    }
+    section h3{
+      margin:18px 0 8px;
+      font-size:16px;
+      color: var(--text);
+    }
+    .note{
+      border-left: 4px solid var(--warn);
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,204,102,.08);
+      color: var(--muted);
+      margin: 12px 0;
+    }
+    .ok{
+      border-left: 4px solid var(--ok);
+      background: rgba(103,232,164,.08);
+    }
+    ul{margin:10px 0 0 20px; color:var(--muted)}
+    p{margin:10px 0; color:var(--muted)}
+    .divider{height:1px; background: rgba(255,255,255,.08); margin:16px 0}
+    footer{
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding:22px 18px;
+      color: var(--muted);
+      font-size:14px;
+      background: rgba(17,24,41,.35);
+    }
+    .two{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    @media (max-width: 680px){ .two{grid-template-columns:1fr} }
+    .card{
+      background: rgba(11,15,25,.35);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      padding:14px;
+    }
+    .kbd{
+      display:inline-block;
+      padding:2px 8px;
+      border:1px solid rgba(255,255,255,.16);
+      border-bottom-width:2px;
+      border-radius:10px;
+      font-size:12px;
+      color:var(--text);
+      background: rgba(0,0,0,.15);
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(106,169,255,.12);
+      color:var(--text);
+      cursor:pointer;
+    }
+    .btn:hover{border-color: rgba(106,169,255,.45)}
+    .small{font-size:13px}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo" aria-label="Marca">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div style="font-weight:700; letter-spacing:.3px;">Manga2Video</div>
+            <div class="small" style="color:var(--muted);">Generación de video basada en mangas</div>
+          </div>
+        </div>
+
+        <a class="btn" href="#contacto">Contactar</a>
+      </div>
+
+      <h1>Términos del Servicio</h1>
+      <p class="subtitle">
+        Estos Términos regulan el uso de Manga2Video (la “Plataforma”), un servicio que ayuda a crear videos a partir de
+        material de manga aportado por el usuario o generado con herramientas de la Plataforma.
+      </p>
+
+      <div class="meta" role="list" aria-label="Metadatos del documento">
+        <span class="pill" role="listitem">Versión: <strong>1.0</strong></span>
+        <span class="pill" role="listitem">Vigente desde: <strong>16/01/2026</strong></span>
+        <span class="pill" role="listitem">Última actualización: <strong>16/01/2026</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap grid">
+      <nav aria-label="Tabla de contenido">
+        <h2>Contenido</h2>
+        <ul class="toc">
+          <li><a href="#aceptacion">1. Aceptación de los términos</a></li>
+          <li><a href="#descripcion">2. Descripción del servicio</a></li>
+          <li><a href="#cuentas">3. Cuentas y seguridad</a></li>
+          <li><a href="#contenido">4. Contenido, derechos y licencias</a></li>
+          <li><a href="#prohibiciones">5. Uso prohibido</a></li>
+          <li><a href="#ia">6. IA, salidas y limitaciones</a></li>
+          <li><a href="#pagos">7. Planes, pagos y reembolsos</a></li>
+          <li><a href="#privacidad">8. Privacidad</a></li>
+          <li><a href="#takedown">9. Reportes y retirada de contenido</a></li>
+          <li><a href="#responsabilidad">10. Limitación de responsabilidad</a></li>
+          <li><a href="#terminacion">11. Terminación</a></li>
+          <li><a href="#cambios">12. Cambios en los términos</a></li>
+          <li><a href="#contacto">13. Contacto</a></li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <p class="small">
+          Tip: usa <span class="kbd">Ctrl</span> + <span class="kbd">F</span> para buscar palabras.
+        </p>
+      </nav>
+
+      <section aria-label="Términos del servicio">
+        <div class="note ok">
+          <strong>Resumen:</strong> Tú aportas o indicas el material; tú eres responsable de tener derechos para usarlo.
+          La Plataforma ofrece herramientas automáticas de edición y generación, pero no garantiza resultados perfectos
+          ni reemplaza asesoría legal sobre copyright.
+        </div>
+
+        <h2 id="aceptacion">1. Aceptación de los términos</h2>
+        <p>
+          Al acceder o usar la Plataforma, aceptas estos Términos y confirmas que tienes capacidad legal para hacerlo.
+          Si no estás de acuerdo, no uses la Plataforma.
+        </p>
+
+        <h2 id="descripcion">2. Descripción del servicio</h2>
+        <p>
+          Manga2Video ofrece funciones como: importación de páginas/paneles, segmentación de escenas, generación de
+          narración, subtítulos, transiciones, música/efectos y exportación de video. Algunas funciones pueden estar
+          disponibles solo en ciertos planes o regiones.
+        </p>
+
+        <h2 id="cuentas">3. Cuentas y seguridad</h2>
+        <div class="two">
+          <div class="card">
+            <h3>3.1 Registro</h3>
+            <p>
+              Puedes necesitar una cuenta para acceder a funciones avanzadas. Debes proporcionar información veraz y
+              mantenerla actualizada.
+            </p>
+          </div>
+          <div class="card">
+            <h3>3.2 Seguridad</h3>
+            <p>
+              Eres responsable de mantener la confidencialidad de tu contraseña y de toda actividad en tu cuenta. Notifica
+              cualquier uso no autorizado.
+            </p>
+          </div>
+        </div>
+
+        <h2 id="contenido">4. Contenido, derechos y licencias</h2>
+        <h3>4.1 Tu contenido</h3>
+        <p>
+          “Contenido” incluye imágenes, paneles, texto, guiones, audio, voces, música, marcas y cualquier material que
+          subas, pegues o conectes. Declaras y garantizas que tienes los derechos, licencias o permisos necesarios para
+          usar ese Contenido y para autorizar su procesamiento dentro de la Plataforma.
+        </p>
+
+        <h3>4.2 Material con copyright (manga y obras derivadas)</h3>
+        <div class="note">
+          Importante: muchos mangas están protegidos por derechos de autor. Convertir páginas a video puede crear una obra
+          derivada. Debes asegurarte de contar con autorización del titular de derechos o de que tu uso esté permitido por
+          la ley aplicable (p. ej., licencia, dominio público o excepción legal).
+        </div>
+
+        <h3>4.3 Licencia para operar el servicio</h3>
+        <p>
+          Nos otorgas una licencia limitada, mundial, no exclusiva y libre de regalías para alojar, reproducir, procesar,
+          transformar y mostrar tu Contenido únicamente con el fin de operar, mantener y mejorar la Plataforma, y para
+          generar los resultados solicitados (por ejemplo, el video exportado).
+        </p>
+
+        <h3>4.4 Propiedad de resultados</h3>
+        <p>
+          En la medida permitida por la ley: tú conservas tus derechos sobre tu Contenido original. Los resultados
+          generados (video, subtítulos, narración) se te entregan para tu uso; sin embargo, si los resultados incorporan
+          material de terceros (p. ej., páginas de manga con copyright), su uso queda sujeto a los derechos de esos
+          terceros.
+        </p>
+
+        <h2 id="prohibiciones">5. Uso prohibido</h2>
+        <ul>
+          <li>Subir material que infrinja derechos de autor, marcas o derechos de imagen sin permiso.</li>
+          <li>Usar la Plataforma para suplantación, fraude, spam o distribución maliciosa.</li>
+          <li>Intentar eludir límites de uso, medidas de seguridad o restricciones del servicio.</li>
+          <li>Generar contenido ilegal, de odio, acoso, o que explote a menores.</li>
+          <li>Reventa no autorizada, “scraping” masivo o ingeniería inversa del sistema.</li>
+        </ul>
+
+        <h2 id="ia">6. IA, salidas y limitaciones</h2>
+        <p>
+          Algunas funciones pueden usar modelos automáticos para segmentación, mejora, narración o subtítulos. Aceptas que
+          la salida puede contener errores (p. ej., subtítulos imprecisos, traducciones incorrectas o fallas de corte).
+          Debes revisar antes de publicar.
+        </p>
+        <p>
+          No garantizamos que el servicio sea ininterrumpido o libre de fallos. Podemos ajustar modelos, parámetros o
+          límites para mejorar rendimiento o seguridad.
+        </p>
+
+        <h2 id="pagos">7. Planes, pagos y reembolsos</h2>
+        <div class="two">
+          <div class="card">
+            <h3>7.1 Suscripciones</h3>
+            <p>
+              Si eliges un plan de pago, aceptas los cargos recurrentes según el periodo (mensual/anual) y los impuestos
+              aplicables. Puedes cancelar en cualquier momento; el acceso se mantiene hasta el fin del ciclo facturado.
+            </p>
+          </div>
+          <div class="card">
+            <h3>7.2 Créditos y límites</h3>
+            <p>
+              Algunos planes usan créditos (por minutos de exportación, renders o almacenamiento). Los créditos pueden
+              caducar si así se indica en tu plan.
+            </p>
+          </div>
+        </div>
+        <p class="small">
+          Reembolsos: si ofreces reembolso, describe aquí la política exacta. Ejemplo: “Reembolsos dentro de 7 días si no
+          se ha consumido más del 10% de créditos”.
+        </p>
+
+        <h2 id="privacidad">8. Privacidad</h2>
+        <p>
+          El tratamiento de datos se rige por nuestra Política de Privacidad. Usamos datos mínimos para operar el servicio
+          (por ejemplo, cuenta, facturación y archivos subidos). Recomendación: enlaza aquí tu política real.
+        </p>
+
+        <h2 id="takedown">9. Reportes y retirada de contenido</h2>
+        <p>
+          Si consideras que un contenido infringe derechos, puedes reportarlo. Podemos retirar o limitar el acceso a
+          contenido presuntamente infractor y, en casos reiterados, suspender cuentas.
+        </p>
+
+        <h2 id="responsabilidad">10. Limitación de responsabilidad</h2>
+        <p>
+          En la medida permitida por la ley, la Plataforma se ofrece “tal cual”. No seremos responsables por pérdidas
+          indirectas, lucro cesante, pérdida de datos o daños derivados del uso o imposibilidad de uso del servicio.
+        </p>
+
+        <h2 id="terminacion">11. Terminación</h2>
+        <p>
+          Puedes dejar de usar el servicio en cualquier momento. Nosotros можемos suspender o terminar el acceso por
+          incumplimiento de estos Términos, por motivos de seguridad, o por requerimiento legal.
+        </p>
+
+        <h2 id="cambios">12. Cambios en los términos</h2>
+        <p>
+          Podemos actualizar estos Términos. Publicaremos la versión vigente en esta página e indicaremos la fecha de
+          actualización. Si continúas usando la Plataforma tras un cambio, se entenderá que aceptas la versión actualizada.
+        </p>
+
+        <h2 id="contacto">13. Contacto</h2>
+        <p>
+          Para consultas, soporte o reportes de copyright, escríbenos a:
+          <a href="mailto:soporte@manga2video.example">soporte@manga2video.example</a>
+        </p>
+
+        <div class="divider"></div>
+        <p class="small">
+          <strong>Nota:</strong> Este documento es una plantilla informativa. Si tu negocio opera en Ecuador u otro país,
+          considera validarlo con asesoría legal para que se ajuste a tu jurisdicción, facturación, impuestos y normativa
+          de protección de datos.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Manga2Video. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script>
+    // Año automático
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
