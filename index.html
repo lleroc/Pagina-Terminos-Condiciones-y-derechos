@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ing. Luis Antonio Llerena Ocaña, PhD | Presentación</title>
+  <meta name="description" content="Página de presentación profesional de Ing. Luis Antonio Llerena Ocaña, PhD." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --card2:#0f1730;
+      --text:#e9eefc;
+      --muted:#b7c2e6;
+      --line:rgba(255,255,255,.10);
+      --accent:#6aa9ff;
+      --accent2:#67e8a4;
+      --shadow: 0 18px 45px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 520px at 8% 0%, rgba(106,169,255,.22), transparent 60%),
+        radial-gradient(800px 480px at 92% 10%, rgba(103,232,164,.14), transparent 55%),
+        radial-gradient(900px 520px at 30% 100%, rgba(255,255,255,.06), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:0 18px}
+    header{
+      padding:52px 0 18px;
+      border-bottom:1px solid var(--line);
+      background: rgba(10,14,30,.35);
+      backdrop-filter: blur(10px);
+    }
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      margin-bottom:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .mark{
+      width:44px; height:44px; border-radius:16px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: var(--shadow);
+    }
+    .name{
+      font-weight:800; letter-spacing:.2px;
+      font-size:18px;
+    }
+    .role{color:var(--muted); font-size:13px}
+    .nav{
+      display:flex; gap:8px; flex-wrap:wrap;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(17,26,51,.45);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .chip:hover{border-color: rgba(106,169,255,.45); color:var(--text); text-decoration:none}
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      padding:18px 0 34px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){ .hero{grid-template-columns:1fr} }
+    h1{
+      margin:10px 0 10px;
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height:1.1;
+    }
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      max-width:75ch;
+      font-size:16px;
+    }
+    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:11px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(106,169,255,.12);
+      color:var(--text);
+      cursor:pointer;
+      box-shadow: 0 8px 18px rgba(0,0,0,.18);
+    }
+    .btn.secondary{
+      background: rgba(103,232,164,.10);
+    }
+    .btn:hover{border-color: rgba(106,169,255,.55); text-decoration:none}
+    .panel{
+      background: rgba(17,26,51,.70);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:16px;
+    }
+    .stats{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    @media (max-width: 520px){ .stats{grid-template-columns:1fr} }
+    .stat{
+      background: rgba(15,23,48,.55);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding:12px;
+    }
+    .stat .k{font-size:12px; color:var(--muted)}
+    .stat .v{font-size:15px; font-weight:700; margin-top:4px}
+    main{padding:22px 0 64px}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
+    section{margin-top:18px}
+    h2{
+      margin:0 0 10px;
+      font-size:18px;
+      letter-spacing:.2px;
+    }
+    p{margin:8px 0; color:var(--muted)}
+    ul{margin:10px 0 0 18px; color:var(--muted)}
+    li{margin:6px 0}
+    .tagRow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .tag{
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(11,16,32,.45);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .timeline{
+      display:grid; gap:10px; margin-top:10px;
+    }
+    .item{
+      padding:12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(15,23,48,.45);
+    }
+    .item .t{font-weight:700; color:var(--text); margin-bottom:4px}
+    .item .d{font-size:13px; color:var(--muted)}
+    footer{
+      border-top:1px solid var(--line);
+      padding:18px 0;
+      background: rgba(10,14,30,.35);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .small{font-size:12px}
+    .kbd{
+      display:inline-block;
+      padding:2px 8px;
+      border:1px solid rgba(255,255,255,.16);
+      border-bottom-width:2px;
+      border-radius:10px;
+      font-size:12px;
+      color:var(--text);
+      background: rgba(0,0,0,.15);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div class="name">Ing. Luis Antonio Llerena Ocaña, PhD</div>
+            <div class="role">Docente universitario · Investigación aplicada · Desarrollo de software</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Navegación">
+          <a class="chip" href="#sobre-mi">Sobre mí</a>
+          <a class="chip" href="#docencia">Docencia</a>
+          <a class="chip" href="#investigacion">Investigación</a>
+          <a class="chip" href="#proyectos">Proyectos</a>
+          <a class="chip" href="#habilidades">Habilidades</a>
+          <a class="chip" href="#contacto">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <div class="panel">
+          <h1>Transformo ideas en sistemas funcionales y clases prácticas.</h1>
+          <p class="subtitle">
+            Soy docente universitario en Ecuador, con enfoque en Ingeniería de Software, bases de datos y el uso de
+            Inteligencia Artificial para mejorar procesos educativos y el desarrollo de aplicaciones reales.
+            Trabajo con metodologías estructuradas, entregables claros y orientación a resultados.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn" href="#proyectos">Ver proyectos destacados</a>
+            <a class="btn secondary" href="#investigacion">Ver líneas de investigación</a>
+          </div>
+
+          <p class="small" style="margin-top:12px;">
+            Tip: usa <span class="kbd">Ctrl</span> + <span class="kbd">F</span> para buscar (por ejemplo: “Sequelize”, “.NET 8”, “Moodle”).
+          </p>
+        </div>
+
+        <div class="panel">
+          <h2 style="margin-top:0;">Perfil rápido</h2>
+          <div class="stats" role="list">
+            <div class="stat" role="listitem">
+              <div class="k">Rol principal</div>
+              <div class="v">Docente universitario</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="k">Contexto</div>
+              <div class="v">UNIANDES · Ecuador</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="k">Enfoque</div>
+              <div class="v">Software + IA aplicada</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="k">Estilo de trabajo</div>
+              <div class="v">Paso a paso · Rúbricas</div>
+            </div>
+          </div>
+
+          <div class="tagRow" aria-label="Etiquetas">
+            <span class="tag">Node.js + Express</span>
+            <span class="tag">Sequelize + MySQL</span>
+            <span class="tag">Angular (18+)</span>
+            <span class="tag">Ionic</span>
+            <span class="tag">.NET 8 + LINQ</span>
+            <span class="tag">PHP MVC</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Moodle + Zoom</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="panel" aria-label="Sobre mí">
+          <h2>Sobre mí</h2>
+          <p>
+            Mi trabajo combina docencia, investigación y desarrollo. Diseño clases con objetivos claros, momentos de
+            inicio–desarrollo–cierre, actividades prácticas y evaluación con enfoque en resultados.
+          </p>
+          <p>
+            Me gusta construir sistemas completos (modelos, controladores, APIs, frontend, BD) y documentar el proceso
+            para que sea replicable por estudiantes y equipos.
+          </p>
+
+          <div class="divider" style="height:1px;background:rgba(255,255,255,.08);margin:14px 0;"></div>
+
+          <h2 style="margin-bottom:8px;">Temas recurrentes</h2>
+          <ul>
+            <li>Arquitecturas REST, autenticación JWT y control de roles (Admin, carrera, estudiante; y otros escenarios).</li>
+            <li>CRUDs robustos, auditoría, buenas prácticas de BD y reducción de redundancia.</li>
+            <li>Integración de IA generativa en docencia e ingeniería de requisitos.</li>
+            <li>Producción de contenidos: guías, rúbricas, bancos de preguntas y material para Moodle.</li>
+          </ul>
+        </section>
+
+        <!-- DOCENCIA -->
+        <section id="docencia" class="panel" aria-label="Docencia">
+          <h2>Docencia</h2>
+          <p>
+            Imparto y diseño contenidos en áreas como Ingeniería de Software, Programación Web, POO, Bases de Datos,
+            y asignaturas de TIC aplicadas a diferentes carreras (por ejemplo, Medicina Veterinaria, Derecho, Psicología).
+          </p>
+
+          <div class="timeline" aria-label="Prácticas de docencia">
+            <div class="item">
+              <div class="t">Diseño de clases estructuradas</div>
+              <div class="d">Objetivo (¿qué, cómo, para qué?), resultado de aprendizaje, momentos, recursos y evaluación.</div>
+            </div>
+            <div class="item">
+              <div class="t">Enfoque práctico</div>
+              <div class="d">Ejercicios guiados, proyectos, integración con APIs/BD, y entregables listos para usar.</div>
+            </div>
+            <div class="item">
+              <div class="t">Plataformas</div>
+              <div class="d">Aula virtual en Moodle, clases en línea (Zoom) y recursos externos para actividades.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- INVESTIGACIÓN -->
+        <section id="investigacion" class="panel" aria-label="Investigación">
+          <h2>Investigación</h2>
+          <p>
+            Desarrollo y acompaño proyectos de investigación con enfoque aplicado, integrando IA, educación y desarrollo de software.
+          </p>
+
+          <h2 style="margin-top:14px;">Líneas y temáticas</h2>
+          <ul>
+            <li>IA en docencia (integración afectiva/emocional, gamificación y neurodidáctica).</li>
+            <li>Herramientas de IA para necesidades educativas especiales en educación superior.</li>
+            <li>Uso de Moodle como apoyo en asignaturas escolares (Lengua y Literatura, Historia, etc.).</li>
+            <li>Mejora de procesos de desarrollo con IA (asistencia, requisitos, tableros, automatización).</li>
+          </ul>
+
+          <p class="small" style="margin-top:10px;">
+            Nota: las referencias bibliográficas en investigaciones suelen mantenerse desde 2017 en adelante (según requerimientos académicos).
+          </p>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="panel" aria-label="Proyectos">
+          <h2>Proyectos destacados</h2>
+          <div class="timeline">
+            <div class="item">
+              <div class="t">Sistema de gestión odontológica</div>
+              <div class="d">
+                Agenda de citas sin traslapes, roles, pagos parciales, tratamientos, imágenes, API con CORS, cifrado y JWT.
+                Stack trabajado: Node.js/Express + Sequelize + MySQL, y frontend con Ionic/Angular.
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="t">Seguimiento a graduados / encuestas por sede y carrera</div>
+              <div class="d">
+                Diseño orientado a múltiples sedes y carreras, cuestionarios administrables (crear/editar/ocultar/visible),
+                validación por cédula y consumo de datos vía API.
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="t">Sistemas académicos y administrativos</div>
+              <div class="d">
+                Desarrollo de bases de datos completas para instituciones, auditoría, normalización y módulos (egresados, encuestas,
+                bolsa de empleo, postulaciones, notificaciones).
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="t">Desarrollo en .NET 8</div>
+              <div class="d">
+                APIs REST y procesos con LINQ, con explicaciones paso a paso para uso formativo.
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="t">Contenidos y material educativo</div>
+              <div class="d">
+                Bancos de preguntas, evaluaciones, guías, momentos de clase y recursos (incluyendo bibliografía en APA 7).
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="panel" aria-label="Habilidades">
+          <h2>Habilidades</h2>
+          <div class="two" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="card" style="background:rgba(15,23,48,.45);border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:14px;">
+              <h3 style="margin:0 0 8px;font-size:15px;">Desarrollo</h3>
+              <ul>
+                <li>Node.js, Express, Sequelize, MySQL</li>
+                <li>Angular, Ionic</li>
+                <li>PHP (MVC), integración con BD</li>
+                <li>.NET 8, C#, LINQ</li>
+              </ul>
+            </div>
+            <div class="card" style="background:rgba(15,23,48,.45);border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:14px;">
+              <h3 style="margin:0 0 8px;font-size:15px;">Académico</h3>
+              <ul>
+                <li>Diseño instruccional (momentos de clase, rúbricas)</li>
+                <li>Investigación científica (IMRyD, APA 7)</li>
+                <li>Moodle, recursos y actividades externas</li>
+                <li>Contenido aplicado por carrera</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tagRow" style="margin-top:12px;">
+            <span class="tag">JWT</span>
+            <span class="tag">CORS</span>
+            <span class="tag">Auditoría BD</span>
+            <span class="tag">Normalización</span>
+            <span class="tag">Bloom</span>
+            <span class="tag">Gamificación</span>
+            <span class="tag">IA Generativa</span>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="panel" aria-label="Contacto">
+          <h2>Contacto</h2>
+          <p>
+            Puedes personalizar esta sección con tus enlaces reales (correo institucional, LinkedIn, Google Scholar, GitHub, portafolio).
+          </p>
+
+          <div class="timeline">
+            <div class="item">
+              <div class="t">Correo</div>
+              <div class="d"><a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a></div>
+            </div>
+            <div class="item">
+              <div class="t">GitHub</div>
+              <div class="d"><a href="#" target="_blank" rel="noopener">https://github.com/tu-usuario</a></div>
+            </div>
+            <div class="item">
+              <div class="t">LinkedIn</div>
+              <div class="d"><a href="#" target="_blank" rel="noopener">https://www.linkedin.com/in/tu-perfil</a></div>
+            </div>
+            <div class="item">
+              <div class="t">Publicaciones / Perfil académico</div>
+              <div class="d"><a href="#" target="_blank" rel="noopener">Google Scholar / ORCID</a></div>
+            </div>
+          </div>
+
+          <p class="small" style="margin-top:12px;">
+            Si quieres, puedo adaptar esta página a: (1) CV académico, (2) portafolio de proyectos, o (3) presentación para eventos de UNIANDES.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Ing. Luis Antonio Llerena Ocaña, PhD · <span class="small">Plantilla HTML lista para publicar</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
