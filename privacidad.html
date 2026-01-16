@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Privacidad | Manga2Video</title>
+  <meta name="description" content="Política de privacidad para una plataforma que crea videos basados en mangas." />
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#111829;
+      --text:#e7eaf1;
+      --muted:#b7bfd6;
+      --line:#24304a;
+      --accent:#6aa9ff;
+      --ok:#67e8a4;
+      --warn:#ffcc66;
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(106,169,255,.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(103,232,164,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      padding:48px 18px 24px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: rgba(17,24,41,.35);
+      backdrop-filter: blur(10px);
+    }
+    .wrap{max-width:1100px; margin:0 auto}
+    .brand{
+      display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+    }
+    .logo{display:flex; align-items:center; gap:12px}
+    .mark{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(106,169,255,1), rgba(103,232,164,1));
+      box-shadow: var(--shadow);
+    }
+    h1{font-size: clamp(26px, 3vw, 38px); margin:14px 0 8px}
+    .subtitle{color:var(--muted); max-width:75ch; margin:0}
+    .meta{
+      margin-top:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(17,24,41,.55);
+    }
+    main{padding:26px 18px 60px}
+    .grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:18px;
+      align-items:start;
+    }
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
+    nav, section{
+      background: rgba(17,24,41,.70);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      box-shadow: var(--shadow);
+    }
+    nav{padding:16px; position:sticky; top:16px}
+    @media (max-width: 980px){ nav{position:relative; top:auto} }
+    nav h2{font-size:16px; margin:0 0 10px}
+    .toc{list-style:none; padding:0; margin:0}
+    .toc li{margin:8px 0}
+    .toc a{
+      display:block; padding:10px 12px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(11,15,25,.35);
+      color: var(--muted);
+    }
+    .toc a:hover{color:var(--text); border-color: rgba(106,169,255,.35)}
+    section{padding:22px}
+    section h2{margin:0 0 12px; font-size:20px}
+    section h3{margin:18px 0 8px; font-size:16px; color:var(--text)}
+    p{margin:10px 0; color:var(--muted)}
+    ul{margin:10px 0 0 20px; color:var(--muted)}
+    .divider{height:1px; background: rgba(255,255,255,.08); margin:16px 0}
+    .note{
+      border-left: 4px solid var(--warn);
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255,204,102,.08);
+      color: var(--muted);
+      margin: 12px 0;
+    }
+    .ok{
+      border-left: 4px solid var(--ok);
+      background: rgba(103,232,164,.08);
+    }
+    .two{
+      display:grid; grid-template-columns: 1fr 1fr; gap:12px;
+    }
+    @media (max-width: 680px){ .two{grid-template-columns:1fr} }
+    .card{
+      background: rgba(11,15,25,.35);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      padding:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(106,169,255,.12);
+      color:var(--text);
+      cursor:pointer;
+    }
+    .btn:hover{border-color: rgba(106,169,255,.45)}
+    .small{font-size:13px}
+    footer{
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding:22px 18px;
+      color: var(--muted);
+      font-size:14px;
+      background: rgba(17,24,41,.35);
+    }
+    code.inline{
+      padding:2px 6px; border-radius:10px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+      color: var(--text);
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo" aria-label="Marca">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div style="font-weight:700; letter-spacing:.3px;">Manga2Video</div>
+            <div class="small" style="color:var(--muted);">Generación de video basada en mangas</div>
+          </div>
+        </div>
+        <a class="btn" href="#contacto">Contactar</a>
+      </div>
+
+      <h1>Política de Privacidad</h1>
+      <p class="subtitle">
+        Esta Política explica qué datos recopilamos, por qué los recopilamos y cómo puedes ejercer tus derechos al usar
+        Manga2Video (la “Plataforma”).
+      </p>
+
+      <div class="meta" role="list" aria-label="Metadatos del documento">
+        <span class="pill" role="listitem">Versión: <strong>1.0</strong></span>
+        <span class="pill" role="listitem">Vigente desde: <strong>16/01/2026</strong></span>
+        <span class="pill" role="listitem">Última actualización: <strong>16/01/2026</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap grid">
+      <nav aria-label="Tabla de contenido">
+        <h2>Contenido</h2>
+        <ul class="toc">
+          <li><a href="#responsable">1. Responsable y alcance</a></li>
+          <li><a href="#datos">2. Datos que recopilamos</a></li>
+          <li><a href="#uso">3. Cómo usamos tus datos</a></li>
+          <li><a href="#bases">4. Base legal / fundamento</a></li>
+          <li><a href="#compartimos">5. Con quién compartimos datos</a></li>
+          <li><a href="#conservacion">6. Conservación</a></li>
+          <li><a href="#seguridad">7. Seguridad</a></li>
+          <li><a href="#derechos">8. Tus derechos</a></li>
+          <li><a href="#cookies">9. Cookies</a></li>
+          <li><a href="#menores">10. Menores</a></li>
+          <li><a href="#transferencias">11. Transferencias internacionales</a></li>
+          <li><a href="#cambios">12. Cambios a esta política</a></li>
+          <li><a href="#contacto">13. Contacto</a></li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <p class="small">
+          Consejo: revisa también los <a href="terminos.html">Términos del Servicio</a> si los publicas en otra página.
+        </p>
+      </nav>
+
+      <section aria-label="Política de privacidad">
+        <div class="note ok">
+          <strong>Resumen:</strong> usamos tus datos para operar la cuenta, generar tus videos, procesar pagos y mejorar la
+          Plataforma. No vendemos tus datos personales.
+        </div>
+
+        <h2 id="responsable">1. Responsable y alcance</h2>
+        <p>
+          El responsable del tratamiento es <strong>Manga2Video</strong> (“nosotros”). Esta Política aplica al sitio web,
+          la app y servicios relacionados. Si integras servicios de terceros (p. ej., login social o pagos), también
+          aplican sus políticas.
+        </p>
+        <p class="small">
+          Completa con tus datos reales: razón social, RUC (si aplica), domicilio y correo del responsable.
+        </p>
+
+        <h2 id="datos">2. Datos que recopilamos</h2>
+        <div class="two">
+          <div class="card">
+            <h3>2.1 Datos de cuenta</h3>
+            <ul>
+              <li>Nombre, correo, contraseña (almacenada de forma cifrada/hasheada).</li>
+              <li>Preferencias de idioma, país, zona horaria.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>2.2 Datos de uso</h3>
+            <ul>
+              <li>Registros técnicos: IP aproximada, dispositivo, navegador, eventos de uso.</li>
+              <li>Métricas: renders, minutos procesados, errores y rendimiento.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>2.3 Contenido que subes o generas</h3>
+        <p>
+          Incluye páginas/paneles, imágenes, guiones, texto, audio y archivos exportados. Si subes material protegido (p.
+          ej., páginas de manga), eres responsable de contar con permisos. La Plataforma solo procesa ese material para
+          brindarte el servicio.
+        </p>
+
+        <h3>2.4 Pagos y facturación</h3>
+        <p>
+          Si contratas un plan de pago, podemos recopilar datos de facturación (nombre, identificación tributaria, país).
+          Los datos de tarjeta suelen ser procesados por un proveedor de pagos; nosotros no almacenamos el número completo
+          de tu tarjeta.
+        </p>
+
+        <h2 id="uso">3. Cómo usamos tus datos</h2>
+        <ul>
+          <li>Crear y administrar tu cuenta.</li>
+          <li>Procesar tu Contenido para generar videos, subtítulos y exportaciones.</li>
+          <li>Brindar soporte, responder consultas y prevenir abuso.</li>
+          <li>Medir rendimiento, depurar errores y mejorar la Plataforma.</li>
+          <li>Gestionar pagos, suscripciones, comprobantes y prevención de fraude.</li>
+          <li>Enviar comunicaciones de servicio (cambios, alertas, seguridad). Marketing solo si lo autorizas.</li>
+        </ul>
+
+        <h2 id="bases">4. Base legal / fundamento</h2>
+        <p>
+          Dependiendo de tu jurisdicción, tratamos datos por: (a) ejecución de contrato (prestación del servicio),
+          (b) cumplimiento legal (facturación, seguridad), (c) interés legítimo (mejoras, prevención de fraude),
+          y (d) consentimiento (marketing, ciertas cookies).
+        </p>
+
+        <h2 id="compartimos">5. Con quién compartimos datos</h2>
+        <p>Podemos compartir datos con:</p>
+        <ul>
+          <li><strong>Proveedores</strong> (hosting, almacenamiento, analítica, envío de correos, soporte).</li>
+          <li><strong>Pasarelas de pago</strong> para procesar suscripciones y facturación.</li>
+          <li><strong>Autoridades</strong> si es requerido por ley o para proteger derechos y seguridad.</li>
+        </ul>
+        <div class="note">
+          No vendemos tus datos personales. Si usas integraciones de terceros, ellos pueden tratar datos bajo sus propias
+          políticas.
+        </div>
+
+        <h2 id="conservacion">6. Conservación</h2>
+        <p>
+          Conservamos datos solo el tiempo necesario para: operar tu cuenta, cumplir obligaciones legales y resolver
+          disputas. Puedes eliminar contenido desde tu cuenta (si la Plataforma lo permite) o solicitar eliminación.
+        </p>
+        <p class="small">
+          Consejo: define plazos concretos (p. ej., logs 12 meses, facturación 7 años, etc.) según tu normativa.
+        </p>
+
+        <h2 id="seguridad">7. Seguridad</h2>
+        <p>
+          Aplicamos medidas técnicas y organizativas: cifrado en tránsito (<code class="inline">HTTPS/TLS</code>), control
+          de accesos, copias de seguridad y monitoreo. Aun así, ningún sistema es 100% infalible.
+        </p>
+
+        <h2 id="derechos">8. Tus derechos</h2>
+        <p>Según tu legislación, puedes solicitar:</p>
+        <ul>
+          <li>Acceso, rectificación y actualización de datos.</li>
+          <li>Eliminación (cuando proceda) y oposición.</li>
+          <li>Portabilidad (cuando aplique).</li>
+          <li>Retiro de consentimiento (para tratamientos basados en consentimiento).</li>
+        </ul>
+        <p>
+          Para ejercerlos, escríbenos indicando tu correo de cuenta y el tipo de solicitud.
+        </p>
+
+        <h2 id="cookies">9. Cookies</h2>
+        <p>
+          Usamos cookies y tecnologías similares para: mantener sesión, recordar preferencias y medir uso. Puedes
+          administrar cookies desde tu navegador. Si implementas un banner de cookies, describe aquí categorías y
+          finalidades.
+        </p>
+
+        <h2 id="menores">10. Menores</h2>
+        <p>
+          La Plataforma no está dirigida a menores de edad. Si detectamos una cuenta de un menor, podemos suspenderla y
+          eliminar datos, según corresponda.
+        </p>
+
+        <h2 id="transferencias">11. Transferencias internacionales</h2>
+        <p>
+          Podemos alojar datos en servidores ubicados fuera de tu país. Cuando aplique, implementamos salvaguardas
+          razonables (cláusulas contractuales, medidas de seguridad y proveedores confiables).
+        </p>
+
+        <h2 id="cambios">12. Cambios a esta política</h2>
+        <p>
+          Podemos actualizar esta Política. Publicaremos la versión vigente y su fecha de actualización. Si los cambios
+          son importantes, intentaremos notificarte por medios razonables.
+        </p>
+
+        <h2 id="contacto">13. Contacto</h2>
+        <p>
+          Privacidad y solicitudes: <a href="mailto:privacidad@manga2video.example">privacidad@manga2video.example</a>
+          <br />
+          Soporte general: <a href="mailto:soporte@manga2video.example">soporte@manga2video.example</a>
+        </p>
+
+        <div class="divider"></div>
+        <p class="small">
+          <strong>Nota:</strong> Esta es una plantilla general. Ajusta el documento a tu país (por ejemplo, Ecuador:
+          normativa de protección de datos aplicable), tu modelo de negocio, proveedores, plazos de conservación y
+          mecanismos de consentimiento.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Manga2Video. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
